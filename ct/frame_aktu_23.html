@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Three Columns</title>
+    <style>
+        /* Style for the columns */
+        .column {
+            float: left;
+            width: 33.33%; /* Each column occupies 33.33% of the width */
+            height: 100vh; /* Full height of the viewport */
+            box-sizing: border-box; /* Include padding and border in the element's total width and height */
+        }
+
+        /* Background colors */
+        .red { background-color: red; }
+        .blue { background-color: blue; }
+        .green { background-color: green; }
+
+        /* Clear floats after the columns */
+        .clearfix::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+
+        /* Additional styles for demonstration */
+        body {
+            margin: 0;
+            padding: 0;
+        }
+        h1 {
+            text-align: center;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="column red"></div>
+    <div class="column blue"></div>
+    <div class="column green"></div>
+
+    <h1>Three Columns Example</h1>
+</body>
+</html>
